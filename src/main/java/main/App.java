@@ -14,11 +14,11 @@ public class App
         
 
 
-        boolean exit = false; {
+        boolean exit = false; 
         while(!exit) {
             System.out.println("1) Pistä siili puhumaan, 2) Luo uusi siili, 3) Juoksuta siiliä, 0) Lopeta ohjelma");
        
-                if(sc.hasNext()) {
+            if(sc.hasNext()) {
                 int i = 0;
                 String stringInput = sc.nextLine();
                 i = Integer.parseInt(stringInput);
@@ -46,10 +46,10 @@ public class App
                         break;
 
                     case 0:
-                        System.out.println("Kiitos ohjelman käytöstä!");
+                        System.out.println("Kiitos ohjelman käytöstä.");
                         exit = true;
                         break;
-                        default:
+                    default:
                         System.out.println("Syöte oli väärä");
                         break;
                 }
@@ -58,5 +58,3 @@ public class App
         sc.close();
     }
 }   
-
-}

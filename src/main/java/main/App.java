@@ -40,7 +40,7 @@ public class App
                         break;
 
                     case 3:
-                        System.out.println("Kuinka monta kierrosta");
+                        System.out.println("Kuinka monta kierrosta?");
                         String roundsString = sc.nextLine();
                         int rounds = Integer.parseInt(roundsString);
                         hedgehog.run(rounds);

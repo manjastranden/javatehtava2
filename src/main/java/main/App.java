@@ -22,7 +22,7 @@ public class App
                 int i = 0;
                 String stringInput = sc.nextLine();
                 i = Integer.parseInt(stringInput);
-
+  
                 switch(i) {
                     case 1:
                         System.out.println("Mitä siili sanoo:");
@@ -41,7 +41,8 @@ public class App
 
                     case 3:
                         System.out.println("Kuinka monta kierrosta");
-                        int rounds = sc.nextInt();
+                        String roundsString = sc.nextLine();
+                        int rounds = Integer.parseInt(roundsString);
                         hedgehog.run(rounds);
                         break;
 
@@ -56,5 +57,6 @@ public class App
             }
         }
         sc.close();
+    
     }
 }   
